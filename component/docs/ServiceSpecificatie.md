@@ -20,24 +20,25 @@ Voor de service staan de volgende wijzigingen op de planning:
 Kort en bondige beschrijving van de service
 
 ### Servicecontext
-Context van de service in woord en beeld<br>
+Context van de service in woord en beeld
+
 ![Context](ServiceScope.png)
 
 ## Service operaties
 ### Operatie 1
 
-**Omschrijving**<br>
+#### Omschrijving
 Functionaliteit van de operatie
 
-**Trigger**<br>
+#### Trigger
 Geef aan waardoor de service getriggert wordt, bijvoorbeeld *Ontvangst bericht*
 
-**Interface beschrijving**<br>
+#### Interface beschrijving
 ![Interface](Berichtstructuur.png)
 
 Figuur 1 Samenhang berichtelementen van Operatie 1, voor het XML bericht zie Appendix A
 
-**Interactie patroon**<br>
+#### Interactie patroon
 Deze service werkt volgens het volgende patroon:<br>
 - In-Only (one-way)
 - In Out (Synchroon, Request-Response)
@@ -45,10 +46,10 @@ Deze service werkt volgens het volgende patroon:<br>
 - Out Only (Notification)
 - Out In (Solicit-Response)
 
-**Observeerbaar gedrag**<br>
+#### Observeerbaar gedrag
 ![Gedrag](Gedrag.png)
 
-*Basis flow (happy flow)*
+*Basis flow (happy flow)*<br>
 1. <Aanbieder> publiceert het <berichtnaam> bericht
 2. De service ontvangt het bericht [1], vertaalt het [2] en stelt het beschikbaar aan de afnemer
 3. De service levert het bericht af bij de afnemer [3]
@@ -60,11 +61,11 @@ Geef aan of er andere scenario’s mogelijk zijn
 *Exceptie flows*<br>
 Geef aan hoe de service met excepties omgaat
 
-**Security**<br>
+#### Security
 Geen additionele beveiligingsmaatregelen nodig buiten de standaard ESB maatregelen. OF
 Deze service maakt gebruik van WS Security | Basic Authentication.
 
-**Performance**
+#### Performance
 | Karakteristiek | Omschrijving   |
 |----------------|----------------|
 | Avg # Requests |                |
